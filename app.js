@@ -13,22 +13,24 @@ for (let i=0; i<20; i++){
 
     // Agregar EventListener a cada ballon:
     ballon.addEventListener('click', (e) => {
-        ballon.style.visibility = 'hidden';
-        ballonsAlive--;
+        if (e.target.style.visibility !== 'hidden') {
+            e.target.style.visibility = 'hidden';
+            ballonsAlive--;
 
-        if(ballonsAlive == 0) render();
-        const pop = new AudioContext();
-        fetch('./pop.mp3')
-        .then(response => response.arrayBuffer())
-        .then(buffer => {
-            pop.decodeAudioData(buffer, function(decodedData) {
-                const source = pop.createBufferSource();
-                source.buffer = decodedData;
-                source.connect(pop.destination);
-                source.start(0);
-            });
-        })
-        .catch(err => console.log(err));
+            if(ballonsAlive == 0) render();
+            const pop = new AudioContext();
+            fetch('./pop.mp3')
+            .then(response => response.arrayBuffer())
+            .then(buffer => {
+                pop.decodeAudioData(buffer, function(decodedData) {
+                    const source = pop.createBufferSource();
+                    source.buffer = decodedData;
+                    source.connect(pop.destination);
+                    source.start(0);
+                });
+            })
+            .catch(err => console.log(err));
+        }
     });
 
     // Agregar cada ballon a la lista de ballons:
@@ -116,24 +118,26 @@ const startCountdown = () => {
 }
 
 document.querySelectorAll('.balloon').forEach(balloon => {
-    balloon.addEventListener('click', () => {
+    balloon.addEventListener('click', (event) => {
         if (!startTimer) {
             startCountdown();
         }
-        balloon.style.visibility = 'hidden';
-        ballonsAlive--;
-        if(ballonsAlive == 0) render();
-        const pop = new AudioContext();
-        fetch('./pop.mp3')
-        .then(response => response.arrayBuffer())
-        .then(buffer => {
-            pop.decodeAudioData(buffer, function(decodedData) {
-                const source = pop.createBufferSource();
-                source.buffer = decodedData;
-                source.connect(pop.destination);
-                source.start(0);
-            });
-        })
-        .catch(err => console.log(err));
+        if (event.target.style.visibility !== 'hidden') {
+            event.target.style.visibility = 'hidden';
+            ballonsAlive--;
+            if(ballonsAlive == 0) render();
+            const pop = new AudioContext();
+            fetch('./pop.mp3')
+            .then(response => response.arrayBuffer())
+            .then(buffer => {
+                pop.decodeAudioData(buffer, function(decodedData) {
+                    const source = pop.createBufferSource();
+                    source.buffer = decodedData;
+                    source.connect(pop.destination);
+                    source.start(0);
+                });
+            })
+            .catch(err => console.log(err));
+        }
     });
 }); 
