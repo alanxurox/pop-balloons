@@ -99,14 +99,14 @@ timer.classList.add('timer');
 document.querySelector("#balloon-map").appendChild(timer);
 
 let startTimer = false;
-let timeLeft = 5000;
+let timeLeft = 4200;
 
 const startCountdown = () => {
     startTimer = true;
     const startTime = Date.now();
     const interval = setInterval(() => {
         const elapsedTime = Date.now() - startTime;
-        timeLeft = Math.max(0, 5000 - elapsedTime);
+        timeLeft = Math.max(0, 4200 - elapsedTime);
         const seconds = Math.floor(timeLeft / 1000);
         const milliseconds = timeLeft % 1000;
         timer.innerHTML = `${seconds}:${milliseconds.toString().padStart(3, '0')}`;
