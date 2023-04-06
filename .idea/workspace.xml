@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="99beffd7-f1ec-4ae5-8477-60547fec3c5c" name="Changes" comment="Changed title and time to 3s to increase difficulty">
+    <list default="true" id="99beffd7-f1ec-4ae5-8477-60547fec3c5c" name="Changes" comment="Added social media">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -30,13 +32,18 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/alanx/exercise-pop-baloons-javascript&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/alanx/balloons-master&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
   }
 }</component>
   <component name="RecentsManager">
@@ -57,7 +64,10 @@
       <updated>1680461530308</updated>
       <workItem from="1680461531533" duration="6750000" />
       <workItem from="1680549526208" duration="39000" />
-      <workItem from="1680578390837" duration="2797000" />
+      <workItem from="1680578390837" duration="4080000" />
+      <workItem from="1680720723048" duration="349000" />
+      <workItem from="1680775391208" duration="222000" />
+      <workItem from="1680796013547" duration="78000" />
     </task>
     <task id="LOCAL-00001" summary="Init Commit">
       <created>1680470049264</created>
@@ -87,7 +97,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680581301728</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added social media">
+      <created>1680581738702</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1680581738702</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -99,6 +116,7 @@
     <MESSAGE value="Add 5s timer" />
     <MESSAGE value="Fix clicking cause multiple balloon to pop" />
     <MESSAGE value="Changed title and time to 3s to increase difficulty" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed title and time to 3s to increase difficulty" />
+    <MESSAGE value="Added social media" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added social media" />
   </component>
 </project>
